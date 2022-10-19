@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Perfumes</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Perfumes</a>
+        <ul>
+            <li><a id="cormenu" href="#sobre">Sobre</a></li>
+            <li><a id="cormenu" href="#perfumes">Perfumes</a></li>
+            <li><a id="cormenu" href="#contato">Contato</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section id="sobre"><strong>Sobre:</strong>
+            <div class="texto">
+            <p>Seja muito bem vindo(a)!
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet minima laudantium quasi autem eum iure neque exercitationem impedit, animi quia incidunt illo, omnis dolorum tempora assumenda modi consectetur excepturi odio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda enim delectus fugit commodi velit cumque quasi odit distinctio, voluptatibus accusamus deleniti.
+            </p>
+            </div>
+            
+            <div class="banner">
+                <img src="" alt="" class="imagem-banner">
+            </div>
+
+            <div class="legenda">
+                <br>
+                <span class="legenda"></span>
+                <br>
+            </div>
+
+            <div class="btfoto0">
+                <button onclick="Trocarfoto(0);">
+                    <picture>
+                        <img id="btfoto1" src="imagens/ponto.png">
+                    </picture>    
+                </button>
+                <button onclick="Trocarfoto(1);">
+                    <picture>
+                        <img id="btfoto2" src="imagens/ponto2.png">                        
+                    </picture>
+                </button>        
+                <button onclick="Trocarfoto(2);">
+                    <picture>
+                        <img id="btfoto3" src="imagens/ponto3.png">
+                    </picture>
+                </button>    
+            </div>
+
+
+        </section>
+
+
+
+        <section id="perfumes"><div id="align"><strong>Perfumes:</strong></div>
+            <div id="responsivo">
+                <button id="btn" data-modal-target="#modal"><strong>Lily</strong>
+                    <br>                
+                    <picture>
+                    <img id="btndim" src="imagens/lily_regular.jpg"> 
+                    </picture>
+                </button>
+
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Lily:</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Muito feminino e criado a partir de ingredientes exclusivos, de forma natural e artesanal, Lily traz para os nossos dias a raridade e a delicadeza de um perfume único. A sua fragrância conta com o exclusivo óleo essencial da Flor de Lírio, obtido por meio de uma técnica muito antiga de extração chamada enfleuráge.
+                    </div>
+                </div>
+
+
+
+                <button id="btn" data-modal-target="#modalb"><strong>Polo verde:</strong>
+                    <br>                
+                    <picture>
+                    <img id="btndim" src="imagens/polo.jpg"> 
+                    </picture>
+                </button>
+
+                <div class="modalb" id="modalb">
+                    <div class="modalb-header">
+                        <div class="titleb">Polo Verde:</div>
+                        <button data-close-button class="close-buttonb">&times;</button>
+                    </div>
+                    <div class="modalb-body">
+                        O perfume masculino Polo de Ralph Lauren é um dos perfumes mais famosos do mundo. A fragrância do primeiro Eau de Toillete criada por Ralph Lauren, Polo, de 1978, possui aroma elegante, ancorado na tradição, mas se mantendo extremamente contemporâneo. Seu ar de frescor caminha ao lado de seu perfume amadeirado que provoca a sensualidade.
+                    </div>
+                </div>
+
+
+                <button id="btn" data-modal-target="#modalc"><strong>212 Rose:</strong>
+                    <br>
+                    <picture>
+                        <img id="btndim" src="imagens/viprose.jpg">
+                    </picture>
+                </button>
+
+                <div class="modalc" id="modalc">
+                    <div class="modalc-header">
+                        <div class="titlec">212 Rose:</div>
+                        <button data-close-button class="close-buttonc">&times;</button>
+                    </div>
+                    <div class="modalc-body">
+                        212 VIP Rosé é um perfume Carolina Herrera, adequado para mulheres da moda moderna. Para quem adora festas, é charmoso e cheio de personalidade, e está sempre na lista exclusiva de convidados. 212 VIP Rosé é uma fragrância Floral Frutada que não passa despercebida e a faz se tornar o centro das atenções, atraindo todos os olhares.
+                    </div>
+                </div>
+                
+                <button id="btn" data-modal-target="#modald"><strong>One Milion:</strong>
+                    <br>
+                    <picture>
+                        <img id="btndim" src="imagens/One.webp">
+                    </picture>
+                </button>
+
+                <div class="modald" id="modald">
+                    <div class="modald-header">
+                        <div class="titled">One Milion:</div>
+                        <button data-close-button class="close-buttond">&times;</button>
+                    </div>
+                    <div class="modald-body">
+                        One Million é um perfume masculino, que se abre com notas de Pomelo, Menta Picante, Mandarina. Como notas de coração desta fragrância Amadeirado Especiado, Rosa, Canela, Condimentos. As notas de fundo contam com nuances de Couro Aveludado, Madeira Branca, Âmbar, Patchouli da Indonésia.
+                    </div>
+                </div>    
+            </div> 
+            
+            <div id="overlay"></div>
+            
+
+        </section>
+
+
+
+        <section id="contato"><strong>Contato:</strong>
+            <footer>
+                <div class="footer-content">
+                    <h3>Code Opacity</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eum temporibus fugiat voluptatibus dolore in ea sequi veniam accusamus at rerum ad suscipit unde, rem doloribus, nostrum similique facere. Delectus.</p>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>copyright &copy;2022 CodeOpacity. Designed by <span>nethunt</span></p>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+
+
+    <!-- JavaScript stickbar -->
+
+
+    <script src="script.js"></script>
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>        
+</body>
+</html>
